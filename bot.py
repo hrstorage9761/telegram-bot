@@ -1,3 +1,4 @@
+
 import openai
 from telegram import Update, InputFile
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
@@ -5,9 +6,10 @@ from gtts import gTTS
 import requests
 import os
 
+
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-'
+
 
 # تنظیمات OpenAI API
 openai.api_key = OPENAI_API_KEY
