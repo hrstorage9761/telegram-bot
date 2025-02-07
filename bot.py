@@ -5,10 +5,9 @@ from gtts import gTTS
 import requests
 import os
 
-# توکن بات تلگرام
-BOT_TOKEN = ''
-# کلید API OpenAI
-OPENAI_API_KEY = ''
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+'
 
 # تنظیمات OpenAI API
 openai.api_key = OPENAI_API_KEY
