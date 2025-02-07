@@ -5,9 +5,10 @@ from gtts import gTTS
 import requests
 import os
 
+
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-'
+
 
 # تنظیمات OpenAI API
 openai.api_key = OPENAI_API_KEY
@@ -85,3 +86,4 @@ app.add_handler(MessageHandler(filters.AUDIO | filters.DOCUMENT | filters.PHOTO,
 
 print("ربات در حال اجرا است...")
 app.run_polling()
+
