@@ -43,7 +43,7 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_message = update.message.text
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o-mini",  # استفاده از مدل gpt-4 به جای gpt-4o
+            model="gpt-3.5-turbo",  # استفاده از مدل gpt-4 به جای gpt-4o
             messages=[{"role": "user", "content": user_message}],
             max_tokens=150,
             temperature=0.7
